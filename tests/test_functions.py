@@ -1,12 +1,6 @@
 from functions import functions
-import json
-from datetime import datetime
 from functions.functions import reading_json
 
-filename = '../data/operations.json'
-
-
-# list = [{1}, {1}, {1}, {1}]
 
 def test_data_sorting():
     assert functions.data_sorting(

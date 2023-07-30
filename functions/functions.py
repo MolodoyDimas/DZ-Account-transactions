@@ -30,6 +30,7 @@ def last_five(list):
 
 
 def hiding_data(name):
+    '''Функция прячет цифры карт и счетов'''
     name = name.rsplit(' ', 1)
     if len(name[1]) == 16:
         return f'{name[0]} {name[1][0:4]} {name[1][4:6]}** **** {name[1][12:16]}'
@@ -38,6 +39,7 @@ def hiding_data(name):
 
 
 def text_output(list):
+    '''Функция выводит готовую информацию'''
     for x in range(len(list)):
         for a in list:
             date_time = datetime.strptime(a["date"], '%Y-%m-%dT%H:%M:%S.%f')
